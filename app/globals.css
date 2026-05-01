@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Core dark palette (per spec) */
+  /* Dark indigo palette — Cartesia.ai/sonic inspired, MiniMax brand identity */
   --color-background: #0a0a0f;       /* deep near-black */
-  --color-background-soft: #111114;  /* alternating bands */
+  --color-background-soft: #111114;  /* alternating band */
   --color-foreground: #ededed;       /* primary text */
   --color-muted: #a1a1aa;            /* zinc-400 — secondary text */
-  --color-subtle: #71717a;           /* zinc-500 — tertiary / captions */
-  --color-card: #0e0e13;             /* card surface */
-  --color-card-hover: #14141a;       /* card hover */
-  --color-border: #27272a;           /* zinc-800 — primary border */
-  --color-border-strong: #3f3f46;    /* zinc-700 — emphasized */
+  --color-subtle: #71717a;           /* zinc-500 — captions */
+  --color-card: #0f0f13;             /* card surface */
+  --color-card-hover: #16161b;       /* card hover */
+  --color-border: #27272a;           /* zinc-800 */
+  --color-border-strong: #3f3f46;    /* zinc-700 */
 
-  /* Brand — indigo */
-  --color-accent: #6366f1;           /* indigo-500 — primary brand */
+  /* Primary accent — indigo-500 */
+  --color-accent: #6366f1;
   --color-accent-soft: rgba(99, 102, 241, 0.12);
-  --color-accent-strong: #818cf8;    /* indigo-400 — hover/emphasis */
-  --color-accent-deep: #4f46e5;      /* indigo-600 */
+  --color-accent-strong: #4f46e5;    /* indigo-600 */
+  --color-accent-deep: #3730a3;      /* indigo-800 */
 
-  /* Secondary product accents (kept from MiniMax identity) */
-  --color-accent-gold: #ffd388;      /* Audio — used sparingly */
-  --color-accent-lavender: #cac9ff;  /* Music — soft */
-  --color-accent-red: #f87171;       /* Text — neutralized red */
+  /* Secondary accents (kept for product-section contrast) */
+  --color-accent-gold: #fbbf24;       /* amber-400 — Audio */
+  --color-accent-lavender: #a5b4fc;   /* indigo-300 — soft */
+  --color-accent-purple: #818cf8;     /* indigo-400 — strong */
+  --color-accent-mint: #86efac;       /* emerald-300 — fresh */
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
@@ -44,23 +45,20 @@
   }
 
   ::selection {
-    background-color: rgba(99, 102, 241, 0.35);
+    background-color: rgba(99, 102, 241, 0.30);
     color: #ededed;
   }
 
   audio {
     color-scheme: dark;
   }
-
-  audio::-webkit-media-controls-panel {
-    background-color: #14141a;
-  }
 }
 
 @utility hero-glow {
   background:
-    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(99, 102, 241, 0.18), transparent 70%),
-    radial-gradient(ellipse 40% 30% at 80% 20%, rgba(129, 140, 248, 0.08), transparent 70%);
+    radial-gradient(ellipse 75% 55% at 50% 0%, rgba(99, 102, 241, 0.18), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 80% 25%, rgba(129, 140, 248, 0.10), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 20% 25%, rgba(79, 70, 229, 0.08), transparent 70%);
 }
 
 @utility cta-glow {
@@ -73,7 +71,7 @@
 }
 
 @utility text-gradient-indigo {
-  background: linear-gradient(120deg, #818cf8 0%, #c7d2fe 50%, #818cf8 100%);
+  background: linear-gradient(120deg, #6366f1 0%, #a5b4fc 50%, #6366f1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -81,15 +79,30 @@
 
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(237, 237, 237, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(237, 237, 237, 0.045) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 
-/* Form inputs (used on /demo) */
+/* Hero waveform — indigo gradient bars */
+@keyframes wave-bar {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.wave-bar {
+  transform-origin: center;
+  animation: wave-bar 1.6s ease-in-out infinite;
+}
+
+/* Form inputs (used on /demo) — dark variant */
 .form-input {
   width: 100%;
-  background-color: rgba(20, 20, 26, 0.7);
+  background-color: #0a0a0f;
   border: 1px solid #27272a;
   border-radius: 0.625rem;
   padding: 0.7rem 0.9rem;
@@ -97,18 +110,16 @@
   color: #ededed;
   transition:
     border-color 120ms ease,
-    background-color 120ms ease,
     box-shadow 120ms ease;
 }
 
 .form-input::placeholder {
-  color: #71717a;
+  color: #52525b;
 }
 
 .form-input:focus {
   outline: none;
   border-color: #6366f1;
-  background-color: rgba(20, 20, 26, 0.95);
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
 }
 

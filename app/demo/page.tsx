@@ -110,11 +110,13 @@ export default function DemoPage() {
             </svg>
             Back home
           </Link>
-          <span className="inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-muted">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-card px-4 py-2 shadow-sm">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
-            Book a Demo
+            <span className="text-[12px] font-medium uppercase tracking-[0.14em] text-muted">
+              Book a Demo
+            </span>
           </span>
-          <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
             {submitted ? "Pick a time that works." : "Tell us where to point the demo."}
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
@@ -127,7 +129,7 @@ export default function DemoPage() {
         {!submitted ? (
           <form
             onSubmit={handleSubmit}
-            className="mx-auto w-full max-w-2xl rounded-2xl border border-border bg-card p-7 shadow-[0_0_0_1px_rgba(99,102,241,0.06)_inset] sm:p-10"
+            className="mx-auto w-full max-w-2xl rounded-2xl border border-border bg-card p-7 shadow-sm sm:p-10"
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label="Name" required>
@@ -208,7 +210,7 @@ export default function DemoPage() {
             <button
               type="submit"
               disabled={submitting}
-              className="mt-9 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-60"
+              className="mt-9 inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-colors hover:bg-foreground/85 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {submitting ? "Submitting…" : "Continue to scheduling"}
               {!submitting ? (

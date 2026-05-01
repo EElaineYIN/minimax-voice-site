@@ -358,11 +358,11 @@ function Waveform() {
       className="mt-16 flex h-24 w-full max-w-3xl items-center justify-center gap-[6px] sm:h-28 sm:gap-2"
     >
       {bars.map((h, i) => {
-        // Smooth indigo gradient across the bars — indigo-600 → indigo-300.
+        // Smooth rose gradient across the bars — rose-600 → rose-300.
         const t = i / (bars.length - 1);
-        const r = Math.round(79 + (199 - 79) * t);
-        const g = Math.round(70 + (210 - 70) * t);
-        const b = Math.round(229 + (254 - 229) * t);
+        const r = Math.round(225 + (253 - 225) * t);
+        const g = Math.round(29 + (164 - 29) * t);
+        const b = Math.round(72 + (175 - 72) * t);
         return (
           <span
             key={i}
@@ -408,23 +408,23 @@ export default function Home() {
             </GhostButton>
           </div>
           <Waveform />
-          <div className="mt-12 grid w-full max-w-3xl grid-cols-2 gap-y-4 text-sm text-muted sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-8 sm:gap-y-3">
-            <span className="flex items-center justify-center gap-2">
+          <div className="mt-12 grid w-full max-w-3xl grid-cols-2 gap-y-4 text-sm text-muted sm:flex sm:max-w-none sm:flex-nowrap sm:items-center sm:justify-center sm:gap-x-7 sm:gap-y-0">
+            <span className="flex items-center justify-center gap-2 whitespace-nowrap">
               <span className="h-1 w-1 rounded-full bg-accent" />
               40+ languages
             </span>
             <span className="hidden text-border-strong sm:inline">·</span>
-            <span className="flex items-center justify-center gap-2">
+            <span className="flex items-center justify-center gap-2 whitespace-nowrap">
               <span className="h-1 w-1 rounded-full bg-accent" />
               &lt;200ms streaming TTFB
             </span>
             <span className="hidden text-border-strong sm:inline">·</span>
-            <span className="flex items-center justify-center gap-2">
+            <span className="flex items-center justify-center gap-2 whitespace-nowrap">
               <span className="h-1 w-1 rounded-full bg-accent" />
               From $60 / 1M chars
             </span>
             <span className="hidden text-border-strong sm:inline">·</span>
-            <span className="flex items-center justify-center gap-2">
+            <span className="flex items-center justify-center gap-2 whitespace-nowrap">
               <span className="h-1 w-1 rounded-full bg-accent" />
               On-prem available today
             </span>

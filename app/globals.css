@@ -12,16 +12,16 @@
   --color-border: #27272a;           /* zinc-800 */
   --color-border-strong: #3f3f46;    /* zinc-700 */
 
-  /* Primary accent — indigo-500 */
-  --color-accent: #6366f1;
-  --color-accent-soft: rgba(99, 102, 241, 0.12);
-  --color-accent-strong: #4f46e5;    /* indigo-600 */
-  --color-accent-deep: #3730a3;      /* indigo-800 */
+  /* Primary accent — rose-500 (MiniMax pink/coral) */
+  --color-accent: #f43f5e;
+  --color-accent-soft: rgba(244, 63, 94, 0.12);
+  --color-accent-strong: #e11d48;    /* rose-600 */
+  --color-accent-deep: #9f1239;      /* rose-800 */
 
   /* Secondary accents (kept for product-section contrast) */
   --color-accent-gold: #fbbf24;       /* amber-400 — Audio */
-  --color-accent-lavender: #a5b4fc;   /* indigo-300 — soft */
-  --color-accent-purple: #818cf8;     /* indigo-400 — strong */
+  --color-accent-lavender: #fda4af;   /* rose-300 — soft */
+  --color-accent-purple: #fb7185;     /* rose-400 — strong */
   --color-accent-mint: #86efac;       /* emerald-300 — fresh */
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
@@ -45,7 +45,7 @@
   }
 
   ::selection {
-    background-color: rgba(99, 102, 241, 0.30);
+    background-color: rgba(244, 63, 94, 0.30);
     color: #ededed;
   }
 
@@ -56,14 +56,14 @@
 
 @utility hero-glow {
   background:
-    radial-gradient(ellipse 75% 55% at 50% 0%, rgba(99, 102, 241, 0.18), transparent 70%),
-    radial-gradient(ellipse 45% 35% at 80% 25%, rgba(129, 140, 248, 0.10), transparent 70%),
-    radial-gradient(ellipse 45% 35% at 20% 25%, rgba(79, 70, 229, 0.08), transparent 70%);
+    radial-gradient(ellipse 75% 55% at 50% 0%, rgba(244, 63, 94, 0.18), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 80% 25%, rgba(251, 113, 133, 0.10), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 20% 25%, rgba(225, 29, 72, 0.08), transparent 70%);
 }
 
 @utility cta-glow {
   background:
-    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(99, 102, 241, 0.14), transparent 70%);
+    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(244, 63, 94, 0.14), transparent 70%);
 }
 
 @utility band-soft {
@@ -71,7 +71,7 @@
 }
 
 @utility text-gradient-indigo {
-  background: linear-gradient(120deg, #6366f1 0%, #a5b4fc 50%, #6366f1 100%);
+  background: linear-gradient(120deg, #f43f5e 0%, #fda4af 50%, #f43f5e 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -119,8 +119,8 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+  border-color: #f43f5e;
+  box-shadow: 0 0 0 4px rgba(244, 63, 94, 0.18);
 }
 
 select.form-input {

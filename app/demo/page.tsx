@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 const CALENDLY_URL = "https://calendly.com/minimax-global/30min";
-const CALENDLY_EMBED = `${CALENDLY_URL}?embed_domain=minimax-voice.com&embed_type=Inline&hide_event_type_details=0&hide_gdpr_banner=1&background_color=0a0a0f&text_color=ededed&primary_color=6366f1`;
+const CALENDLY_EMBED = `${CALENDLY_URL}?embed_domain=minimax-voice.com&embed_type=Inline&hide_event_type_details=0&hide_gdpr_banner=1&background_color=0a0a0f&text_color=ededed&primary_color=f43f5e`;
 
 const useCases = [
   "Voice agent / IVR",

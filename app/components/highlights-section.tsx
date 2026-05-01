@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const HIGHLIGHTS = [
   "Voice cloning across 40+ languages, including Mandarin, Arabic, and Hindi.",
-  "Per-sentence emotion & style prompts — not SSML soup.",
+  "Per-sentence emotion & style prompts. No SSML soup.",
   "On-premise deployment available today, not a 2026 roadmap promise.",
   "Long-form generation up to 30 minutes in a single call.",
-  "Voice agent ready — drop into LiveKit, Pipecat, Twilio, any SIP trunk.",
+  "Voice agent ready. Drops into LiveKit, Pipecat, Twilio, any SIP trunk.",
   "Half the price of ElevenLabs at HD parity, a quarter at Turbo.",
 ];
 
@@ -27,7 +27,7 @@ const TABS: Tab[] = [
     bullet: "MOS 4.42 on internal eval set",
     heading: "QUALITY",
     copy:
-      "Speech-2.5-HD ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end — no chunking, no manual stitching.",
+      "Speech-2.5-HD ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end. No chunking, no manual stitching.",
     icon: (
       <svg
         width="14"
@@ -50,7 +50,7 @@ const TABS: Tab[] = [
     bullet: "<200ms TTFB across regions",
     heading: "SPEED",
     copy:
-      "Sub-200ms time-to-first-byte on Turbo, measured globally. PCM streaming begins emitting after the first phoneme is generated — not after a buffer fills. Built for the inner loop of a voice agent, not for batch jobs. Mid-sentence interruption is clean, with state preserved for resume.",
+      "Sub-200ms time-to-first-byte on Turbo, measured globally. PCM streaming begins emitting after the first phoneme is generated, not after a buffer fills. Built for the inner loop of a voice agent, not for batch jobs. Mid-sentence interruption is clean, with state preserved for resume.",
     icon: (
       <svg
         width="14"
@@ -73,7 +73,7 @@ const TABS: Tab[] = [
     bullet: "40+ languages, native prosody",
     heading: "REACH",
     copy:
-      "40+ languages with native-quality prosody — not phoneme mapping. Code-switching mid-sentence (English → Mandarin → Spanish) works without retriggering the model or swapping voices. A single cloned voice can speak any of the supported languages, including non-Latin scripts.",
+      "40+ languages with native-quality prosody, not phoneme mapping. Code-switching mid-sentence (English → Mandarin → Spanish) works without retriggering the model or swapping voices. A single cloned voice can speak any of the supported languages, including non-Latin scripts.",
     icon: (
       <svg
         width="14"

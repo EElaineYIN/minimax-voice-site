@@ -1,9 +1,8 @@
 # MiniMax Voice — SEO landing site
 
-Independent SEO landing page targeting TTS / voice cloning / voice agent search traffic. Drives leads through a form → Calendly demo flow.
+Independent SEO landing page targeting TTS / voice cloning / voice agent search traffic. Drives leads through a form — submissions land in a Feishu Bitable for follow-up.
 
 - **Domain:** minimax-voice.com
-- **Calendly:** https://calendly.com/minimax-global/30min
 - **Lead store:** Feishu Bitable (`IocFbYtana4UVfsqWgAc86iVnqR` / `tbl6pOHHYLRe0ImK`)
 
 ## Stack
@@ -37,7 +36,7 @@ app/
 ├── robots.ts               # generates /robots.txt
 ├── demo/
 │   ├── layout.tsx          # SEO metadata for /demo
-│   └── page.tsx            # form → POST /api/submit-lead → Calendly
+│   └── page.tsx            # form → POST /api/submit-lead → confirmation
 └── api/
     └── submit-lead/
         └── route.ts        # writes a record to the Feishu Bitable

@@ -19,11 +19,11 @@ const SITE_URL = "https://minimax-voice.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "MiniMax Voice — TTS, Voice Cloning & Voice Agent API",
+    default: "MiniMax Voice: TTS, Voice Cloning & Voice Agent API",
     template: "%s · MiniMax Voice",
   },
   description:
-    "Production-grade text-to-speech, instant voice cloning, and sub-200ms voice agent infrastructure across 40+ languages. The MiniMax Voice platform — built to ship.",
+    "Production-grade text-to-speech, instant voice cloning, and sub-200ms voice agent infrastructure across 40+ languages. The MiniMax Voice platform, built to ship.",
   keywords: [
     "MiniMax",
     "MiniMax Voice",
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "MiniMax Voice",
-    title: "MiniMax Voice — TTS, Voice Cloning & Voice Agent API",
+    title: "MiniMax Voice: TTS, Voice Cloning & Voice Agent API",
     description:
-      "Studio-grade TTS, instant voice cloning, and real-time voice agent APIs in 40+ languages — at half the cost of ElevenLabs, with on-premise available today.",
+      "Studio-grade TTS, instant voice cloning, and real-time voice agent APIs in 40+ languages, at half the cost of ElevenLabs, with on-premise available today.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MiniMax Voice — TTS, Voice Cloning & Voice Agent API",
+    title: "MiniMax Voice: TTS, Voice Cloning & Voice Agent API",
     description:
       "Production voice AI in 40+ languages. TTS from $60/M chars. Cloud or on-premise.",
   },
@@ -171,7 +171,7 @@ function SiteHeader() {
         <Link
           href="/"
           className="flex items-center"
-          aria-label="MiniMax Voice — home"
+          aria-label="MiniMax Voice home"
         >
           <Image
             src="/minimax-logo-light.png"
@@ -183,12 +183,12 @@ function SiteHeader() {
             style={{ height: 28, width: "auto" }}
           />
         </Link>
-        <div className="hidden items-center gap-9 md:flex">
-          {navMenus.map((menu) => (
-            <NavMenu key={menu.label} menu={menu} />
-          ))}
-        </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-9">
+          <div className="hidden items-center gap-9 md:flex">
+            {navMenus.map((menu) => (
+              <NavMenu key={menu.label} menu={menu} />
+            ))}
+          </div>
           <Link
             href="/demo"
             className="inline-flex items-center justify-center rounded-full bg-foreground px-5 py-2.5 text-[14px] font-medium text-background transition-colors hover:bg-foreground/85"

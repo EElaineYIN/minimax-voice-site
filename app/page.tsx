@@ -7,14 +7,14 @@ const audioSamples = [
   {
     scenario: "Natural",
     pillLabel: "Golden Voice",
-    label: "Golden Voice — Human-like",
+    label: "Golden Voice (human-like)",
     file: "/audio/en-golden-voice-speech28.mp3",
     lang: "English",
     model: "Speech 2.8",
     script:
-      "Hey, it's me. How are ya? (chuckle) I hope you're having an awesome day! We actually had a bit of a crazy launch day yesterday, but I'm just recovered and ready to roll. You're listening to this and probably thinking I'm just chatting into a microphone — but here's the twist: I'm actually not human. I am the new Speech 2.8 model from MiniMax.",
+      "Hey, it's me. How are ya? (chuckle) I hope you're having an awesome day! We actually had a bit of a crazy launch day yesterday, but I'm just recovered and ready to roll. You're listening to this and probably thinking I'm just chatting into a microphone, but here's the twist: I'm actually not human. I am the new Speech 2.8 model from MiniMax.",
     listenFor:
-      "Breaths, chuckles, throat-clears — every disfluency you'd expect from a human.",
+      "Breaths, chuckles, throat-clears. Every disfluency you'd expect from a human.",
   },
   {
     scenario: "Bilingual",
@@ -24,9 +24,9 @@ const audioSamples = [
     lang: "JP × EN",
     model: "Speech 2.8",
     script:
-      "Oh my gosh, you won't believe it—今日は本当にすごかったの! I was running late for work, それから電車が止まっちゃって, and I'm like, 'Seriously?!' でも大丈夫, because guess what—道で昔の友達にばったり会ったの!",
+      "Oh my gosh, you won't believe it, 今日は本当にすごかったの! I was running late for work, それから電車が止まっちゃって, and I'm like, 'Seriously?!' でも大丈夫, because guess what, 道で昔の友達にばったり会ったの!",
     listenFor:
-      "Native prosody on both sides — same voice through the switch, no model swap.",
+      "Native prosody on both sides. Same voice through the switch, no model swap.",
   },
 ] as const;
 
@@ -88,7 +88,7 @@ const cloningTiers = [
       "We fine-tune a dedicated model on a curated studio recording. Indistinguishable from the source speaker, even on long-form narration.",
     points: [
       "30 min curated recordings",
-      "Trained in 3–5 business days",
+      "Trained in 3 to 5 business days",
       "Best on Speech-2.5-HD",
       "Available cloud or on-premise",
     ],
@@ -142,7 +142,7 @@ const agentFeatures = [
   {
     title: "Sub-200ms TTFB",
     description:
-      "Time-to-first-byte under 200ms on Turbo — fast enough for natural turn-taking inside a voice loop.",
+      "Time-to-first-byte under 200ms on Turbo. Fast enough for natural turn-taking inside a voice loop.",
   },
   {
     title: "PCM streaming",
@@ -178,13 +178,13 @@ const comparisonRows: Array<{
   cartesia: string;
 }> = [
   {
-    label: "HD model — per 1M chars",
+    label: "HD model, per 1M chars",
     minimax: "$100",
     elevenlabs: "~$300",
     cartesia: "$99",
   },
   {
-    label: "Turbo model — per 1M chars",
+    label: "Turbo model, per 1M chars",
     minimax: "$60",
     elevenlabs: "~$99",
     cartesia: "$25",
@@ -210,7 +210,7 @@ const comparisonRows: Array<{
   {
     label: "On-premise deployment",
     minimax: "Available now",
-    elevenlabs: "Early access — Apr 2026",
+    elevenlabs: "Early access, Apr 2026",
     cartesia: "Not offered",
   },
   {
@@ -398,7 +398,7 @@ export default function Home() {
             <br className="hidden sm:block" /> and sub-200ms voice agents in 40+ languages.
           </h2>
           <p className="mt-7 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-            Cloud or on-premise — at half the cost of ElevenLabs, available today.
+            Cloud or on-premise, at half the cost of ElevenLabs. Available today.
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
             <PrimaryButton href="/demo">Get a Demo</PrimaryButton>
@@ -448,7 +448,7 @@ export default function Home() {
             }
           >
             Two unedited first-take samples from Speech 2.8. No mastering, no
-            EQ, no post-processing — what you hear is what the API returns.
+            EQ, no post-processing. What you hear is what the API returns.
           </SectionHeading>
           <div className="grid auto-rows-fr gap-6 lg:grid-cols-2">
             {audioSamples.map((sample, idx) => (
@@ -589,7 +589,7 @@ export default function Home() {
                 </h3>
                 <p className="mt-2 max-w-2xl text-sm text-muted">
                   Air-gapped deployments, GPU-aware scaling, full audit
-                  controls. Available today — not a 2026 roadmap promise.
+                  controls. Available today, not a 2026 roadmap promise.
                 </p>
               </div>
               <GhostButton href="/demo">Talk to sales</GhostButton>
@@ -625,7 +625,7 @@ export default function Home() {
             category="Voice Cloning"
             title={
               <>
-                Clone any voice — in seconds,
+                Clone any voice in seconds,
                 <br className="hidden sm:block" /> or studio-grade in days.
               </>
             }
@@ -787,7 +787,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
             Book a 30-minute walkthrough with our solutions team. We&apos;ll
             generate samples in your target language and scope a deployment that
-            fits your constraints — cloud, hybrid, or fully on-premise.
+            fits your constraints, whether cloud, hybrid, or fully on-premise.
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
             <PrimaryButton href="/demo">Book a Demo</PrimaryButton>

@@ -2,7 +2,7 @@
 
 Independent SEO landing page targeting TTS / voice cloning / voice agent search traffic. Drives leads through a form — submissions land in a Feishu Bitable for follow-up.
 
-- **Domain:** minimax-voice.com
+- **Domain:** minimax-speech.com
 - **Lead store:** Feishu Bitable (`IocFbYtana4UVfsqWgAc86iVnqR` / `tbl6pOHHYLRe0ImK`)
 
 ## Stack
@@ -67,7 +67,7 @@ The route writes to these columns. Make sure your Feishu Bitable has matching
 column names (or update them in `app/api/submit-lead/route.ts`):
 
 - `Name`, `Email`, `Company`, `Use Case`, `Volume`, `Message`
-- `Source` (auto: `minimax-voice.com`)
+- `Source` (auto: `minimax-speech.com`)
 - `Submitted At` (auto: ISO timestamp)
 
 ## Adding audio samples
@@ -108,7 +108,7 @@ Fonts: `Geist Sans` (body) + `Geist Mono` (kickers, code).
 2. Push to GitHub.
 3. Import the repo into Vercel.
 4. Set `FEISHU_APP_ID` and `FEISHU_APP_SECRET` in Vercel project settings.
-5. Bind `minimax-voice.com` once it's registered.
+5. Bind `minimax-speech.com` once it's registered.
 
 ## Notes
 

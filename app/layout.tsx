@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://minimax-voice.com";
+const SITE_URL = "https://minimax-speech.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -64,7 +64,7 @@ const navMenus: Array<{
   items: Array<{ href: string; label: string; description: string; external?: boolean }>;
 }> = [
   {
-    label: "Products",
+    label: "Voice Products",
     items: [
       {
         href: "/#tts",
@@ -216,13 +216,13 @@ function SiteFooter() {
               style={{ height: 24, width: "auto" }}
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
-              Production voice AI for product teams. Text-to-speech, voice
-              cloning, and real-time voice agents in 40+ languages.
+              Text-to-speech, voice cloning, and real-time voice agents across
+              40+ languages. Built to ship.
             </p>
           </div>
           <div>
             <h4 className="mb-4 text-[13px] font-semibold uppercase tracking-[0.08em] text-foreground">
-              Product
+              Voice Products
             </h4>
             <ul className="space-y-3 text-sm text-muted">
               <li>
@@ -282,7 +282,7 @@ function SiteFooter() {
         </div>
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-border pt-8 text-xs text-subtle md:flex-row md:items-center">
           <span>© {new Date().getFullYear()} MiniMax. All rights reserved.</span>
-          <span className="font-mono">minimax-voice.com</span>
+          <span className="font-mono">minimax-speech.com</span>
         </div>
       </div>
     </footer>

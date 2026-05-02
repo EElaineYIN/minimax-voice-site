@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://minimax-voice.com";
+const SITE_URL = "https://minimax-speech.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {

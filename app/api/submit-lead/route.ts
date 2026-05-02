@@ -140,7 +140,7 @@ export async function POST(request: Request) {
     "Use Case": validated.data.useCase,
     Volume: validated.data.volume,
     Message: validated.data.message,
-    Source: "minimax-voice.com",
+    Source: "minimax-speech.com",
     "Submitted At": new Date().toISOString(),
   };
 

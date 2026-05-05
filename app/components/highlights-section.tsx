@@ -27,7 +27,7 @@ const TABS: Tab[] = [
     bullet: "MOS 4.42 on internal eval set",
     heading: "QUALITY",
     copy:
-      "Speech-2.5-HD ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end. No chunking, no manual stitching.",
+      "Speech-2.8-HD ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end. No chunking, no manual stitching.",
     icon: (
       <svg
         width="14"

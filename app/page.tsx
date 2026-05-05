@@ -32,7 +32,7 @@ const audioSamples = [
 
 const ttsModels = [
   {
-    name: "Speech-2.5-HD",
+    name: "Speech-2.8-HD",
     tagline: "Cinematic delivery for content that ships to humans.",
     price: "$100",
     unit: "per 1M characters",
@@ -46,7 +46,7 @@ const ttsModels = [
     ],
   },
   {
-    name: "Speech-2.5-Turbo",
+    name: "Speech-2.8-Turbo",
     tagline: "Built for high-volume, latency-sensitive workloads.",
     price: "$60",
     unit: "per 1M characters",
@@ -77,7 +77,7 @@ const cloningTiers = [
     points: [
       "10s reference audio",
       "Ready in <60 seconds",
-      "Best on Speech-2.5-Turbo",
+      "Best on Speech-2.8-Turbo",
       "Pay-per-use, no setup fee",
     ],
   },
@@ -89,7 +89,7 @@ const cloningTiers = [
     points: [
       "30 min curated recordings",
       "Trained in 3 to 5 business days",
-      "Best on Speech-2.5-HD",
+      "Best on Speech-2.8-HD",
       "Available cloud or on-premise",
     ],
   },
@@ -585,7 +585,7 @@ export default function Home() {
               <div>
                 <CategoryTag>On-Premise</CategoryTag>
                 <h3 className="mt-3 text-3xl font-semibold tracking-tight text-foreground">
-                  Run Speech-2.5 in your own VPC.
+                  Run Speech-2.8 in your own VPC.
                 </h3>
                 <p className="mt-2 max-w-2xl text-sm text-muted">
                   Air-gapped deployments, GPU-aware scaling, full audit

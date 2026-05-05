@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "voice agent",
     "ElevenLabs alternative",
     "Cartesia alternative",
-    "Speech-2.5",
+    "Speech-2.8",
     "multilingual TTS",
     "on-premise TTS",
   ],

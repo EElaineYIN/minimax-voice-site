@@ -6,8 +6,7 @@ const HIGHLIGHTS = [
   "Voice cloning across 40+ languages, including Mandarin, Arabic, and Hindi.",
   "Per-sentence emotion & style prompts. No SSML soup.",
   "On-premise deployment available today, not a 2026 roadmap promise.",
-  "Long-form generation up to 30 minutes in a single call.",
-  "Voice agent ready. Drops into LiveKit, Pipecat, Twilio, any SIP trunk.",
+  "Voice agent ready. Drops into LiveKit, Pipecat, Vapi, Retell, any SIP trunk.",
   "Half the price of ElevenLabs at HD parity, a quarter at Turbo.",
 ];
 
@@ -27,7 +26,7 @@ const TABS: Tab[] = [
     bullet: "MOS 4.42 on internal eval set",
     heading: "QUALITY",
     copy:
-      "Speech-2.8-HD ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end. No chunking, no manual stitching.",
+      "Speech-2.8 ties with ElevenLabs Turbo v2.5 in blind MOS evaluations and outperforms it on emotional range. Speaker identity is preserved across long-form output without drift, making it usable for audiobook and podcast production end-to-end. No chunking, no manual stitching.",
     icon: (
       <svg
         width="14"

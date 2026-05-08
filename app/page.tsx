@@ -61,13 +61,6 @@ const ttsModels = [
   },
 ];
 
-const onPremTiers = [
-  { plan: "Starter", volume: "Up to 5M chars / month", price: "$2,500 / mo" },
-  { plan: "Growth", volume: "Up to 25M chars / month", price: "$9,500 / mo" },
-  { plan: "Scale", volume: "Up to 100M chars / month", price: "$28,000 / mo" },
-  { plan: "Enterprise", volume: "Unlimited + SLA + GPU sizing", price: "Custom" },
-];
-
 const cloningTiers = [
   {
     code: "IVC",
@@ -76,8 +69,7 @@ const cloningTiers = [
       "Upload 10 seconds of audio and start generating in under a minute. Built for prototypes, character voices, and personalized assistants.",
     points: [
       "10s reference audio",
-      "Ready in <60 seconds",
-      "Best on Speech-2.8-Turbo",
+      "Ready in <30 seconds",
       "Pay-per-use, no setup fee",
     ],
   },
@@ -89,7 +81,6 @@ const cloningTiers = [
     points: [
       "30 min curated recordings",
       "Trained in 3 to 5 business days",
-      "Best on Speech-2.8-HD",
       "Available cloud or on-premise",
     ],
   },
@@ -167,7 +158,7 @@ const agentFeatures = [
   {
     title: "SIP-ready",
     description:
-      "Drop into Twilio, Telnyx, or any SIP trunk. Tested for telephony codecs and 8kHz fallback.",
+      "Drop into any SIP trunk. Tested for telephony codecs and 8kHz fallback.",
   },
 ];
 
@@ -211,7 +202,7 @@ const comparisonRows: Array<{
     label: "On-premise deployment",
     minimax: "Available now",
     elevenlabs: "Early access, Apr 2026",
-    cartesia: "Not offered",
+    cartesia: "Self-hosted (Enterprise)",
   },
   {
     label: "Emotion / style control",
@@ -403,7 +394,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
             <PrimaryButton href="/demo">Get a Demo</PrimaryButton>
             <GhostButton href="/#tts">View Pricing</GhostButton>
-            <GhostButton href="https://www.minimax.io/audio" external>
+            <GhostButton href="https://platform.minimax.io/docs/api-reference/api-overview" external>
               Read the Docs
             </GhostButton>
           </div>
@@ -579,42 +570,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          <div className="rounded-2xl border border-border bg-card p-9 shadow-sm">
-            <div className="flex flex-col gap-4 border-b border-border pb-7 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <CategoryTag>On-Premise</CategoryTag>
-                <h3 className="mt-3 text-3xl font-semibold tracking-tight text-foreground">
-                  Run Speech-2.8 in your own VPC.
-                </h3>
-                <p className="mt-2 max-w-2xl text-sm text-muted">
-                  Air-gapped deployments, GPU-aware scaling, full audit
-                  controls. Available today, not a 2026 roadmap promise.
-                </p>
-              </div>
-              <GhostButton href="/demo">Talk to sales</GhostButton>
-            </div>
-            <div className="mt-6 overflow-hidden rounded-xl border border-border">
-              <table className="w-full text-left text-sm">
-                <thead className="bg-background-soft text-[11px] uppercase tracking-[0.12em] text-subtle">
-                  <tr>
-                    <th className="px-6 py-4 font-semibold">Plan</th>
-                    <th className="px-6 py-4 font-semibold">Monthly volume</th>
-                    <th className="px-6 py-4 font-semibold">Price</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {onPremTiers.map((tier) => (
-                    <tr key={tier.plan} className="text-foreground/90">
-                      <td className="px-6 py-4 font-medium">{tier.plan}</td>
-                      <td className="px-6 py-4 text-muted">{tier.volume}</td>
-                      <td className="px-6 py-4 font-mono">{tier.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -700,7 +655,7 @@ export default function Home() {
               </>
             }
           >
-            Drop into LiveKit, Pipecat, Twilio, or your own stack. The same TTS
+            Drop into LiveKit, Pipecat, or your own stack. The same TTS
             that powers our cloud API, tuned for real-time conversation.
           </SectionHeading>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -791,7 +746,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
             <PrimaryButton href="/demo">Book a Demo</PrimaryButton>
-            <GhostButton href="https://www.minimax.io/audio" external>
+            <GhostButton href="https://platform.minimax.io/docs/api-reference/api-overview" external>
               Read the docs
             </GhostButton>
           </div>

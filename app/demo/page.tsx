@@ -110,6 +110,12 @@ export default function DemoPage() {
               "30 minutes with a solutions engineer. We'll cover your use case, generate samples in your language of choice, and walk through pricing for cloud and on-premise."
             )}
           </p>
+          {!submitted ? (
+            <p className="mt-4 text-xs text-subtle">
+              We&apos;ll only use these details to prep the call. No marketing
+              automation.
+            </p>
+          ) : null}
         </div>
 
         {!submitted ? (
@@ -220,10 +226,6 @@ export default function DemoPage() {
                 </svg>
               ) : null}
             </button>
-            <p className="mt-3 text-center text-xs text-subtle">
-              We&apos;ll only use these details to prep the call. No marketing
-              automation.
-            </p>
           </form>
         ) : (
           <div className="mx-auto w-full max-w-2xl rounded-2xl border border-border bg-card p-10 text-center shadow-sm sm:p-12">

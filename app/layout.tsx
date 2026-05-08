@@ -97,7 +97,7 @@ const navMenus: Array<{
         description: "vs ElevenLabs & Cartesia.",
       },
       {
-        href: "https://www.minimax.io/audio",
+        href: "https://platform.minimax.io/docs/api-reference/api-overview",
         label: "API Docs",
         description: "Reference, SDKs, quickstarts.",
         external: true,
@@ -265,7 +265,7 @@ function SiteFooter() {
               <li>
                 <a
                   className="hover:text-foreground"
-                  href="https://www.minimax.io/audio"
+                  href="https://platform.minimax.io/docs/api-reference/api-overview"
                   target="_blank"
                   rel="noreferrer"
                 >
